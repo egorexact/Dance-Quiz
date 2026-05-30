@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dance Quiz</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-overlay"></div>
+<div class="noise"></div>
+
+<div class="app">
+
+  <!-- HEADER -->
+  <header class="hero">
+
+    <img src="assets/logo.png" class="logo" alt="Logo">
+
+    <div class="hero-text">
+      <h1>DANCE QUIZ</h1>
+      <p>угадай движение</p>
+    </div>
+
+  </header>
+
+  <!-- QUIZ CARD -->
+  <main class="quiz-card">
+
+    <!-- TOP -->
+    <div class="top-bar">
+
+      <div class="progress-info">
+        <span id="currentQuestion">1</span>
+        /
+        <span id="totalQuestions">5</span>
+      </div>
+
+      <div class="score-box">
+        SCORE:
+        <span id="score">0</span>
+      </div>
+
+    </div>
+
+    <!-- PROGRESS -->
+    <div class="progress-track">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="video-wrapper">
+
+      <video
+        id="quizVideo"
+        class="quiz-video"
+        preload="auto"
+        playsinline
+        controls
+      ></video>
+
+      <button class="replay-btn" id="replayBtn">
+        ↺
+      </button>
+
+    </div>
+
+    <!-- QUESTION -->
+    <div class="question-label">
+      КАКОЕ ЭТО ДВИЖЕНИЕ?
+    </div>
+
+    <!-- ANSWERS -->
+    <div class="answers" id="answers"></div>
+
+    <!-- FEEDBACK -->
+    <div class="feedback" id="feedback"></div>
+
+    <!-- NEXT -->
+    <button class="next-btn" id="nextBtn">
+      СЛЕДУЮЩИЙ
+    </button>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
