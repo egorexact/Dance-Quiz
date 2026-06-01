@@ -498,7 +498,7 @@ function showResults() {
         class="next-btn"
         style="display:block; margin-top: 1.5rem;"
       >
-        ПРОЙТИ СНОВА
+        ПРОЙТИ ДАЛЬШЕ
       </button>
 
     </div>
